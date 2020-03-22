@@ -6,11 +6,10 @@ class BankAccount
     @name = name 
     @balance = 1000
     @status = 'open'
-    @@account = []
   end 
   
   def deposit(money)
-    @@account << money
+    @balance += money
   end 
 
 end
