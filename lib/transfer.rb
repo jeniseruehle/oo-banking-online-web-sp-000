@@ -20,7 +20,11 @@ class Transfer
       @receiver.balance = @receiver.balance + amount
       @sender.balance = @sender.balance - amount
       @status = "complete"
+    else   
+      @status = "rejected"
     end 
   end 
   
+  def reverse_transfer
+
 end
